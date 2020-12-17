@@ -160,21 +160,11 @@ div.containerP {
 												                background: #DFEEFF;
 												            }
 .covidBox {
-        width: 90%;
-        height: 60%;
         background: #DFEEFF;
-        position: absolute;
-        top: 77%;
-        left: 5%;
             }
 
             .covidBoxTwo {
-                    width: 90%;
-                    height: 70%;
                     background: #DFEEFF;
-                    position: absolute;
-                    top: 142%;
-                    left: 5%;
                         }
 
 												.charityBox {
@@ -434,7 +424,7 @@ img {vertical-align: middle;}
 	margin-top: -300px;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 650px;
+	margin-bottom: 300px;
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr;
@@ -511,4 +501,32 @@ img {vertical-align: middle;}
 
 .grid-container-activities .slide2 {
 	grid-area: e;
+}
+
+
+.grid-container-covid {
+	margin-top: -250px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 250px;
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 5%;
+  grid-template-areas:
+    "a ."
+    "b b"
+    "c c";
+}
+
+.grid-container-covid .firstGridContent {
+	grid-area: a;
+}
+
+.grid-container-covid .covidBox {
+	grid-area: b;
+}
+
+.grid-container-covid .covidBoxTwo {
+	grid-area: c;
 }
