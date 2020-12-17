@@ -117,67 +117,48 @@ div.containerP {
 		    }
 
     .secondHomeBox {
-            width: 40%;
-            height: 40%;
-            background: #DFEEFF;
-            position: absolute;
-            top: 65%;
-            left: 55%;
+						background: #DFEEFF;
         }
 
         .thirdHomeBox {
-                width: 35%;
-                height: 55%;
                 background: #DFEEFF;
-                position: absolute;
-                top: 77%;
-                left: 15%;
             }
 
             .fourthHomeBox {
-                    width: 47%;
-                    height: 40%;
                     background: #DFEEFF;
-                    position: absolute;
-                    top: 136%;
-                    left: 40%;
+
                 }
 
                 .fifthHomeBox {
-                        width: 30%;
-                        height: 60%;
                         background: #DFEEFF;
-                        position: absolute;
-                        top: 145%;
-                        left: 5%;
                     }
 
                     .sixthHomeBox {
-                            width: 50%;
-                            height: 25%;
                             background: #DFEEFF;
-                            position: absolute;
-                            top: 180%;
-                            left: 45%;
                         }
+																		.secondSourceBox {
+										                        background: #DFEEFF;
+										                            }
 
-                .fourthSourceBox {
-                        width: 30%;
-                        height: 80%;
+																								.thirdSourceBox {
+																                        background: #DFEEFF;
+																                            }
+
+								.fourthSourceBox {
                         background: #DFEEFF;
-                        position: absolute;
-                        top: 116%;
-                        left: 60%;
                             }
 
                 .fifthSourceBox {
-                        width: 50%;
-                        height: 51%;
                         background: #DFEEFF;
-                        position: absolute;
-                        top: 145%;
-                        left: 5%;
                             }
+
+														.secondAct {
+																		background: #DFEEFF;
+																}
+
+																.thirdAct {
+												                background: #DFEEFF;
+												            }
 .covidBox {
         width: 90%;
         height: 60%;
@@ -261,7 +242,7 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   /* max-width: 1000px; */
-	width: 40%;
+	/* width: 40%; */
   position: relative;
   margin: auto;
 	/* top: 85%; */
@@ -373,11 +354,91 @@ img {vertical-align: middle;}
 }
 
 
+.grid-container-sources {
+	margin-top: -200px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 200px;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 5%;
+  grid-template-areas:
+    "a a ."
+    ". b b"
+    "c c ."
+    ". d d"
+    "e e e";
+}
+
+.grid-container-sources .firstGridContent {
+	grid-area: a;
+}
+
+.grid-container-sources .secondSourceBox {
+	grid-area: b;
+}
+
+.grid-container-sources .thirdSourceBox {
+	grid-area: c;
+}
+
+.grid-container-sources .fourthSourceBox {
+	grid-area: d;
+}
+
+.grid-container-sources .fifthSourceBox {
+	grid-area: e;
+}
+
+
+.grid-container-charity {
+	margin-top: -200px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 200px;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 5%;
+  grid-template-areas:
+    "a a ."
+    ". b b"
+    "c c ."
+    ". d d"
+    "e e e";
+}
+
+.grid-container-charity .firstGridContent {
+	grid-area: a;
+}
+
+.grid-container-charity .charityBox {
+	grid-area: b;
+}
+
+.grid-container-charity .charityBoxTwo {
+	grid-area: c;
+}
+
+.grid-container-charity .charityBoxThree {
+	grid-area: d;
+}
+
+.grid-container-charity .charityBoxFour {
+	grid-area: e;
+}
+
+
 .grid-container-home {
-  display: grid;
+	margin-top: -300px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 650px;
+	display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 5px 5px;
+  grid-template-rows: auto 1fr;
+  gap: 5% 2%;
   grid-template-areas:
     "a a a . . ."
     "a a a . . ."
@@ -390,4 +451,64 @@ img {vertical-align: middle;}
     "e e e . . ."
     "e e e f f f"
     "e e e f f f";
+}
+
+.grid-container-home .firstGridContent {
+	grid-area: a;
+}
+
+.grid-container-home .secondHomeBox {
+	grid-area: b;
+}
+
+.grid-container-home .thirdHomeBox {
+	grid-area: c;
+}
+
+.grid-container-home .fourthHomeBox {
+	grid-area: d;
+}
+
+.grid-container-home .fifthHomeBox {
+	grid-area: e;
+}
+
+.grid-container-home .sixthHomeBox {
+	grid-area: f;
+}
+
+
+.grid-container-activities {
+	margin-top: -250px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 200px;
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 2%;
+  grid-template-areas:
+    "a ."
+    "b c"
+    "d e";
+}
+
+.grid-container-activities .firstGridContent {
+	grid-area: a;
+}
+
+.grid-container-activities .slide1 {
+	grid-area: b;
+}
+
+.grid-container-activities .secondAct {
+	grid-area: c;
+}
+
+.grid-container-activities .thirdAct {
+	grid-area: d;
+}
+
+.grid-container-activities .slide2 {
+	grid-area: e;
 }
