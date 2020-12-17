@@ -424,7 +424,7 @@ img {vertical-align: middle;}
 	margin-top: -300px;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 300px;
+	margin-bottom: 650px;
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr;
