@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Holiday Activites</title>
+<link rel="stylesheet" type="text/css" href="capstoneHTML.css">
+</head>
+<body>
+
+<header>
+<ul class="headUl">
+  <li class="headLi"><img class="logo" src="icon.png"></li>
+  <li class="headLi"><a href="capHome.html">Home</a></li>
+  <li class="headLi"><a href="covid.html">COVID-19 Safety</a></li>
+  <li class="headLi"><a href="activities.html" class="active">Holiday Activites</a></li>
+  <li class="headLi"><a href="gifts.html">Gifting Safely</a></li>
+  <li class="headLi"><a href="charity.html">Giving Back</a></li>
+  <li class="headLi"><a href="sources.html">Sources</a></li>
+</ul>
+</header>
+
+<img style="width:100%;height:400px;" alt="snow animation" src="snow.gif">
+
+
+
+<div class="firstBox">
+  <h2 class="pageTitle">Holiday Activities</h2>
+  <p class="para">Look below to learn about what activities are high-risk and low-risk this holiday season. Flip through the slideshows to see some examples of activities!</p>
+</div>
+
+<div class="thirdHomeBox" style="width:40%;height:62%;top:82.5%;left:55%;">
+  <h3 class="articleTitle" style="text-align:center;">High-Risk Activites:</h3>
+  <p class="para">These activities are high-risk so try to avoid them. If you absolutely need to do one of these activities, like traveling for example, exercise precaution. Wear a mask, practice good hygiene, and pay attention to what the government restrics and advises. In general, activities that gather large crowds are higher-risk.</p>
+</div>
+
+
+<div class="slideshow-container" style="margin:15% 5%;">
+  <div class="mySlides1">
+    <img src="party.jpg" style="width:100%">
+    <div class="text"><h3>Holiday Dinners and Parties</h3></div>
+  </div>
+
+  <div class="mySlides1">
+    <img src="travel.jpeg" style="width:100%">
+    <div class="text"><h3>Traveling</h3></div>
+  </div>
+
+  <div class="mySlides1">
+    <img src="mall.jpg" style="width:100%">
+    <div class="text"><h3>Crowded Events - Santa Meet, Shopping</h3></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
+<div class="thirdHomeBox" style="width:40%;height:60%;top:126%;left:5%;">
+  <h3 class="articleTitle" style="text-align:center;">Low-Risk Activites:</h3>
+  <p class="para">These activities are low-risk, so opt for these this holiday season. Even if an activity is lower-risk, like skiing, still follow COVID protocols. Virtual events are great and allow you to connect with family and friends far away. Virtual movie and game nights are two fun options. In general, stay with your household.</p>
+</div>
+
+<div class="slideshow-container" style="margin:0% 55%;">
+  <div class="mySlides2">
+    <img src="ski.jpg" style="width:100%">
+    <div class="text"><h3>Skiing</h3></div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="virtual.jpeg" style="width:100%">
+    <div class="text"><h3>Virtual Parties</h3></div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="lights.jpg" style="width:100%">
+    <div class="text"><h3>Driving to See Light Displays</h3></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+
+
+
+
+<footer>
+<div class="footer" style="margin-top:130px;">
+  <div class="row">
+    <div class="column side">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="capHome.html">Home</a></li>
+        <li><a href="covid.html">COVID-19 Safety</a></li>
+        <li><a class="active" href="activities.html">Holiday Activites</a></li>
+        <li><a href="gifts.html">Gifting Safely</a></li>
+        <li><a href="charity.html">Giving Back</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </div>
+
+    <div class="column middle">
+      <h4>About</h4>
+      <p style="color:white;">A student-created website for educating Vancouverites about having a safe holiday season during December 2020.</p>
+    </div>
+
+    <div class="column side">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:881985@learn.vsb.bc.ca">Email me</a></li>
+      </ul>
+    </div>
+
+    <div class="column side">
+      <p></p>
+      <ul>
+        <li><a href="activities.html"><b>Back to top</b></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
